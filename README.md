@@ -9,7 +9,6 @@
 
 This project extracts weather data from https://www.meteomatics.com/, performs several transformations, and then uploads to a relational database.
 
-
   
 
 <!-- TABLE OF CONTENTS -->
@@ -17,7 +16,7 @@ This project extracts weather data from https://www.meteomatics.com/, performs s
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Setup Project](#setup-project)
+- [Set Up Project](#set-up-project)
 - [About The Project](#about-the-project)
 	- [Process](#process)
 - [Warehouse Layout](#warehouse-layout)
@@ -27,7 +26,10 @@ This project extracts weather data from https://www.meteomatics.com/, performs s
 
   
 <!-- TO START -->
-## Setup Project
+## Set Up Project
+Prior to recreating this project, you will need to create an account on https://www.meteomatics.com/ and retreive both your username and password. Save the two into individual Prefect Secret [Blocks](https://docs.prefect.io/latest/concepts/blocks/), naming them `auth-weather-username` and `auth-weather-password`, respectively.
+<br>
+
 Run these commands to setup your project locally.
 ```shell
 # Clone the code as shown below
