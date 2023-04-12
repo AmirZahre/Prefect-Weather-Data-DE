@@ -35,9 +35,18 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (2, 
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (3, 'Clouds generally forming or developing');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (4, 'Haze or smoke, or dust in suspension in the air, visibility >= 1 km');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (5, 'Haze or smoke, or dust in suspension in the air, visibility < 1 km');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (6, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (7, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (8, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (9, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (10, 'Mist');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (11, 'Diamond dust');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (12, 'Distant lightning');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (13, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (14, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (15, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (16, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (17, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (18, 'Squalls');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (19, 'Reserved');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (20, 'Fog');
@@ -56,6 +65,10 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (32,
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (33, 'Fog or ice fog');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (34, 'Fog or ice fog');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (35, 'Fog, depositing rime');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (36, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (37, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (38, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (39, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (40, 'PRECIPITATION');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (41, 'Precipitation');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (42, 'Precipitation');
@@ -113,6 +126,8 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (93,
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (94, 'Thunderstorm, heavy');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (95, 'Thunderstorm, heavy');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (96, 'Thunderstorm, heavy');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (97, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (98, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (99, 'Tornado');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (100, 'No significant weather observed');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (101, 'Clouds generally dissolving or becoming less developed');
@@ -120,9 +135,18 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (102
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (103, 'Clouds generally forming or developing');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (104, 'Haze or smoke, or dust in suspension in the air, visibility >= 1 km');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (105, 'Haze or smoke, or dust in suspension in the air, visibility < 1 km');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (106, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (107, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (108, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (109, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (110, 'Mist');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (111, 'Diamond dust');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (112, 'Distant lightning');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (113, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (114, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (115, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (116, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (117, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (118, 'Squalls');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (119, 'Reserved');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (120, 'Fog');
@@ -141,6 +165,10 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (132
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (133, 'Fog or ice fog');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (134, 'Fog or ice fog');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (135, 'Fog, depositing rime');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (136, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (137, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (138, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (139, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (140, 'PRECIPITATION');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (141, 'Precipitation');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (142, 'Precipitation');
@@ -198,5 +226,6 @@ INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (193
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (194, 'Thunderstorm, heavy');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (195, 'Thunderstorm, heavy');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (196, 'Thunderstorm, heavy');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (197, 'MISC');
+INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (198, 'MISC');
 INSERT INTO public.weather_status (weather_status_id, weather_state) VALUES (199, 'Tornado');
-
