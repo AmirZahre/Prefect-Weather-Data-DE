@@ -7,8 +7,7 @@
 
 <p  align="center">
 
-This project extracts weather data from https://www.meteomatics.com/, performs several transformations, and then uploads to a relational database.
-
+This project extracts weather data from https://www.meteomatics.com/, performs several transformations, and then uploads to a relational database. From there, you're able to connect to metabase (http://localhost:3000) and create metrics from the data, such as below!
   
 
 <!-- TABLE OF CONTENTS -->
