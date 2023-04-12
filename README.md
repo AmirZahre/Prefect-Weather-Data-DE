@@ -16,7 +16,7 @@ This project extracts weather data from https://www.meteomatics.com/, performs s
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Set Up Project](#set-up-project)
+- [Setting Up The project](#setting-up-the-project)
 - [About The Project](#about-the-project)
 	- [Process](#process)
 - [Warehouse Layout](#warehouse-layout)
@@ -26,7 +26,7 @@ This project extracts weather data from https://www.meteomatics.com/, performs s
 
   
 <!-- TO START -->
-## Set Up Project
+## Setting Up The project
 Prior to recreating this project, you will need to create an account on https://www.meteomatics.com/ and retreive both your username and password. Save the two into individual Prefect Secret [Blocks](https://docs.prefect.io/latest/concepts/blocks/), naming them `auth-weather-username` and `auth-weather-password`, respectively.
 <br>
 
