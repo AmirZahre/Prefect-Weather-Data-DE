@@ -45,9 +45,9 @@ CREATE TABLE public.raw_weather_hourly (
 );
 
 CREATE TABLE public.weather_daily (
-    daily_weather_id character varying(255) PRIMARY KEY,
+    daily_weather_id character varying(255) NOT NULL,
     city_id character varying(255) NOT NULL,
-    date timestamp without time zone NOT NULL,
+    date DATE NOT NULL,
     precip_24h_mm double precision NOT NULL,
     precip_type_idx integer NOT NULL,
     sunrise_ux timestamp without time zone NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE public.weather_daily (
 );
 
 CREATE TABLE public.weather_hourly (
-    hourly_weather_id character varying(255) PRIMARY KEY,
+    hourly_weather_id character varying(255) NOT NULL,
     city_id character varying(255) NOT NULL,
     date timestamp without time zone NOT NULL,
     relative_humidity_2m_p double precision NOT NULL,

@@ -26,7 +26,7 @@ def format_GET_daily_api(raw_response_daily_df):
 
     # formats datetime
     response_daily_df["date"] = pd.to_datetime(
-        response_daily_df['date'], format="%Y-%m-%d")
+        response_daily_df['date']).dt.date
 
     # https://stackoverflow.com/questions/46375147/create-new-columns-from-unique-row-values-in-a-pandas-dataframe
     # https://stackoverflow.com/questions/26255671/pandas-column-values-to-columns

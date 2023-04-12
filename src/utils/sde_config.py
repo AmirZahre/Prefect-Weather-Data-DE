@@ -1,6 +1,6 @@
 import os
 
-from src.daily_weather_update.utils.db import DBConnection
+from src.utils.db import DBConnection
 
 
 def get_warehouse_creds() -> DBConnection:

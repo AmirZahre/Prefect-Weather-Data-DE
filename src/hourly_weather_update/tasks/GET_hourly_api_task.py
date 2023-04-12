@@ -1,5 +1,5 @@
-from src.hourly_weather_update.utils.db import WarehouseConnection
-from src.hourly_weather_update.utils.sde_config import get_warehouse_creds
+from src.utils.db import WarehouseConnection
+from src.utils.sde_config import get_warehouse_creds
 from prefect.blocks.system import Secret
 from datetime import date, datetime
 from prefect import task

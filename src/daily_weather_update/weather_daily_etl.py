@@ -1,8 +1,8 @@
 from prefect import flow, task
 from src.daily_weather_update.tasks.GET_daily_api_task import GET_daily_api
 from src.daily_weather_update.tasks.format_GET_daily_api_task import format_GET_daily_api
-from src.daily_weather_update.utils.db import WarehouseConnection
-from src.daily_weather_update.utils.sde_config import get_warehouse_creds
+from src.utils.db import WarehouseConnection
+from src.utils.sde_config import get_warehouse_creds
 
 
 @task  # upload the daily weather DataFrame to the weather_daily table

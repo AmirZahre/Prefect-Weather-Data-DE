@@ -1,6 +1,6 @@
 from prefect import flow, task
-from src.hourly_weather_update.utils.db import WarehouseConnection
-from src.hourly_weather_update.utils.sde_config import get_warehouse_creds
+from src.utils.db import WarehouseConnection
+from src.utils.sde_config import get_warehouse_creds
 from src.hourly_weather_update.tasks.GET_hourly_api_task import GET_hourly_api
 from src.hourly_weather_update.tasks.format_GET_hourly_api_task import format_GET_hourly_api
 

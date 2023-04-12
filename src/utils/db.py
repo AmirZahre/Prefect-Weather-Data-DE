@@ -43,6 +43,8 @@ class WarehouseConnection:
                 index=False,
                 if_exists='append'
             )
-
+            
             print("to_sql() completed via. (sqlalchemy)")
         except Exception as e: print(e)
+        finally:
+            engine.dispose()
