@@ -4,7 +4,7 @@ up:
 	docker compose --env-file .env up --build -d
 
 down:
-	docker compose --env-file .env down --volumes
+	docker compose --env-file .env down
 
 ### Daily Weather ETL
 daily_etl:

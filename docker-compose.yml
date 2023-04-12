@@ -28,7 +28,18 @@ services:
       POSTGRES_DB: ${WAREHOUSE_DB}
     volumes:
       - ./containers/warehouse:/docker-entrypoint-initdb.d
+      - ./containers/warehouse/data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     expose:
       - 5432
+
+  dashboard:
+    image: metabase/metabase
+    container_name: dashboard
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metabase-data:/metabase-data
+    environment:
+      MB_DB_FILE: /metabase-data/metabase.db
