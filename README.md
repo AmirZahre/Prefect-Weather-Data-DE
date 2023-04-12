@@ -9,6 +9,9 @@
 
 This project extracts weather data from https://www.meteomatics.com/, performs several transformations, and then uploads to a relational database. From there, you're able to connect to metabase (http://localhost:3000) and create metrics from the data, such as below!
   
+![Screenshot from 2023-04-12 14-20-40](https://user-images.githubusercontent.com/71795488/231575573-9f3c5680-1def-45b3-b1e6-96be5f577302.png)
+
+
 
 <!-- TABLE OF CONTENTS -->
 
