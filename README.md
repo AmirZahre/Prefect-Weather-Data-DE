@@ -55,7 +55,7 @@ Continue with the shell commands.
 ```shell
 # Build containers & test
 make up # Spin up the containers
-make pytest # Run all the test files under /tests
+make ci # Run CI tests (isort format lint pytest)
 
 # Local run pipelines
 make daily_etl
