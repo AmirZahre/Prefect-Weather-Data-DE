@@ -5,9 +5,6 @@ import pandas as pd
 import pygeohash as gh
 from prefect import task
 
-# https://stackoverflow.com/questions/40136651/stack-output-with-all-individual-indexs-filled-in-pandas-dataframe
-pd.set_option('display.multi_sparse', False)
-
 
 @task
 def format_GET_daily_api(raw_response_daily_df):
@@ -67,7 +64,7 @@ def format_GET_daily_api(raw_response_daily_df):
     response_daily_df.insert(0, "daily_weather_id", weather_id)
 
     # log of transformed df
-    print(response_daily_df)
+    # print(response_daily_df)
     pd.DataFrame.to_csv(response_daily_df)
 
     return response_daily_df
