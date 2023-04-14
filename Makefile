@@ -1,5 +1,3 @@
-include .env
-
 up:
 	docker compose --env-file .env up --build -d
 
@@ -12,7 +10,6 @@ daily_etl:
 
 daily_etl_deploy:
 	docker exec loader python3 src/daily_weather_update/deployment.py
-###
 
 ### Hourly Weather ETL
 hourly_etl:
@@ -20,17 +17,22 @@ hourly_etl:
 
 hourly_etl_deploy:
 	docker exec loader python3 src/hourly_weather_update/deployment.py
-###
 
+# Spin up Local Agent
 prefect_agent:
 	docker exec loader prefect agent start --pool default-agent-pool
 
+# CI
+format:
+	docker exec loader python -m black -S --line-length 79 .
+
+isort:
+	docker exec loader isort .
+
 pytest:
-	docker exec loader pytest tests/
+	docker exec loader pytest tests
 
-location:
-	docker exec loader ls
+lint: 
+	docker exec loader flake8 /opt/sde
 
-##### initialize prefect cloud
-prefect-cloud:
-	docker exec loader prefect cloud login --key '${PREFECT_API_KEY}' --workspace '${PREFECT_WS}'
+ci: isort format lint pytest
