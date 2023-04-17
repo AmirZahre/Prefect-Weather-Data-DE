@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # connect to prefect cloudPREFECT_API_KEY} --workspace ${PREFECT_WS}
 # RUN prefect cloud login --key $PREFECT_API_KEY --workspace $PREFECT_WS
-# RUN prefect cloud login --key pnu_ev71fvNLnW2bktM2uFyIQenYJRjhLK02o2aE --workspace amirzahreddinegmailcom/workspace-1
+# RUN prefect cloud login --key  --workspace 
 
 # COPY init_prefect_cloud.sh .
 # RUN chmod +x sde/containers/loader/init_prefect_cloud.sh
