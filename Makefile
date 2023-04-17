@@ -30,7 +30,7 @@ isort:
 	docker exec loader isort .
 
 pytest:
-	docker exec loader pytest tests
+	docker exec loader pytest -p no:warnings tests 
 
 lint: 
 	docker exec loader flake8 /opt/sde
