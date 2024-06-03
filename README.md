@@ -118,33 +118,20 @@ There exists six tables, with four being static and two dynamic in nature.
 
 ## Tables
 
-### Dimension
+### Fact
 
-  
+*  **Weather_Hourly**: Fed data hourly, this table contains attributes focused on the current temperature, humidity, and wind.
 
-*  **Country**: which contains data pertaining to the country name. This table is linked to the `City` table via. a one-to-many relationship of the `country_id` attribute.
+*  **Weather_Daily**: Fed data daily, this table is focused on aggregate weather observations of the day. This includes min/max/mean values for temperature, as well as sunset/sunrise times.
 
-  
 
-*  **City**: which stores city details. Its primary key, `city_id`, is a geohash of its coordinates. It is linked to the table `Country` via. a many-to-one `country_id` attribute, and linked to `Weather_Hourly` and `Weather_Daily` via. a one-to-many relationship with its `city_id` attribute.
 
-  
+### Dimension  
+
+*  **Country**: Contains data pertaining to the country name. This table is linked to the `City` table via. a one-to-many relationship of the `country_id` attribute.
+
+*  **City**: Stores city details. Its primary key, `city_id`, is a geohash of its coordinates. It is linked to the table `Country` via. a many-to-one `country_id` attribute, and linked to `Weather_Hourly` and `Weather_Daily` via. a one-to-many relationship with its `city_id` attribute.
 
 *  **Weather_Status**: Contains a mapping of weather status id's provided by the source API, converting them into a description of current weather. The id is the primary key, `weather_status_id`, and serves as a foreign key in both the `Weather_Hourly` and `Weather_Daily` tables.
 
-  
-
 *  **Precipitation_Type**: Similar mapping as `Weather_Status`, but for precipitation. It only serves the `Weather Daily` table.
-
-  
-  
-
-### Fact
-
-  
-
-*  **Weather_Hourly**: fed data hourly, this table contains attributes focused on the current temperature, humidity, and wind.
-
-  
-
-*  **Weather_Daily**: fed data daily, this table is focused on aggregate weather observations of the day. This includes min/max/mean values for temperature, as well as sunset/sunrise times.
