@@ -118,7 +118,7 @@ There exists six tables, with four being static and two dynamic in nature.
 
 ## Tables
 
-### Static
+### Dimension
 
   
 
@@ -139,7 +139,7 @@ There exists six tables, with four being static and two dynamic in nature.
   
   
 
-### Dynamic
+### Fact
 
   
 
