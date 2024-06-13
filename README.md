@@ -112,7 +112,7 @@ The Python library `requests` is used to retrieve the data. `pandas` is used to 
 
 ![Screenshot from 2023-03-22 21-25-24](https://user-images.githubusercontent.com/71795488/227098906-70565eb2-95d2-4a35-a2c6-ab96d975f0ef.png)
 
-There exists six tables, with four being static and two dynamic in nature.
+There exists six tables: four dimension and two fact.
 
   
 
